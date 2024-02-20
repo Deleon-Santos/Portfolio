@@ -1,2 +1,2 @@
-# Portf-lio
-Meu repositório personalizado com projetos acadêmicos
+# Portfolio
+Meu portfoli com projetos acadêmicos 
