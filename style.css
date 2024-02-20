@@ -1,0 +1,140 @@
+@charset "UTF8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.927);
+    color: rgba(255, 255, 255, 0.608);
+}
+header{
+    margin: auto;
+    padding: 20px; 
+    height: 60px;  
+    padding-top: 20px;
+}
+header nav{
+    margin: auto;
+    padding: 20px;
+
+   
+}
+header a{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto; 
+    padding: 30px;
+    padding-left: -50px;
+    text-decoration: none;
+    color:rgb(1, 203, 203) ;
+    font-weight: bold;
+    border-radius: 10px;
+}
+header a:hover{
+
+    background-color: rgb(1, 203, 203)  ;
+    color:rgba(0, 0, 0, 0.766);
+    
+    
+}
+
+main{
+    display: flex;
+    columns: 2;
+    max-width: 800px;
+    min-width: 700px;
+    margin: auto;
+    padding-top: 10px;       
+}
+main h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: antiquewhite;
+    font-weight: 600;
+    text-align: justify;
+    padding: 30px;
+}
+main p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    padding: 30px;;
+}
+img{
+    border-radius: 25%;
+    padding-top: 0px;
+    padding-right: 40px;
+    box-shadow: 1px 1px 3px rgb(1, 203, 203);
+    padding-bottom: 20px;   
+}
+#img{
+    padding-top: 30px;
+    padding-left: 20px;
+}
+aside{
+    padding-bottom: 50px;
+}
+aside p {
+    border: 20px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;    
+}
+aside a {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.766) ;
+    text-decoration: none;
+    color: rgb(1, 203, 203);
+    font-weight: bold;
+    box-shadow:  1px 3px rgba(14, 14, 14, 0.626)  
+    
+}
+aside a:hover{
+    background-color: rgb(1, 203, 203)  ;
+    color:rgba(0, 0, 0, 0.766);
+    
+}
+footer{
+    background-color: rgb(1, 203, 203);
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+footer p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.811);
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    text-shadow: 1px 1px 1px rgba(250, 235, 215, 0.416);
+    height: 20px;
+    font-weight: bold;
+}
+
+/*ajuste para telas menores*/
+@media only screen and (max-width:740px) {
+    header nav {
+        margin: auto;
+        width: 60%;
+        display: flex;
+        
+    }
+    header a{
+        padding: 10px;
+        font-size: .8em;
+    }
+    
+    main {
+      width: 50%;
+      margin: auto;
+      display: contents;
+
+    }
+    img {
+        margin: auto;
+        padding: auto;
+        width: 50%;
+        display: flex;
+        padding-right: 10px;
+    }
+      
+    }
