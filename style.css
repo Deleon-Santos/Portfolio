@@ -125,7 +125,8 @@ aside a:hover{
     border-bottom: 30px;
     font-family:var(--font-padrao);
     padding-bottom: 40px;
-    width: 600px;
+    max-width: 600px;
+    min-width: 300px;
 }
 .mostra a{ 
     padding: 10px;
@@ -189,15 +190,19 @@ footer p{
 /*ajuste para telas menores*/
 @media only screen and (max-width:740px) {
     header{
-        width: 40%
+        width: 60%
     }   
     header nav {
         margin: auto;
         display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     header a{
         padding: 10px;
         font-size: .7em;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .conteudo {
       width: 50%;
