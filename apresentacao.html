@@ -6,39 +6,59 @@
     <title>Leon Santos</title>
     <link rel="shortcut icon" href="https://assets.codepen.io/1792828/internal/avatars/users/default.png?fit=crop&format=auto&height=256&version=1519783134&width=256" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script defer src="scripts.js"></script>
 </head>
 <body>
     <header>
         <nav>
             <a href="#">QUEM SOU</a>
-            <a href="#">PROJETOS</a>
+            <a class="projetos" href="#.oculta">PROJETOS</a>
         </nav>
     </header>
     <main>
-        <div id="img">
-        
-            <img src="1.png" alt="poto perfil">
+        <div class="conteudo">
+            <!--coluna esquerda-->
+            <div id="img">
+                <img src="imagens/1.png" alt="poto perfil">
+                
+                <h1>Leon Santos</h1>
+            </div>
+            <!--coluna direita-->
+            <div>
+                <h1>Aluno de Análise e Desenvolvimento de Sistemas e <strong>Amante</strong> de tecnologia. </h1>
+                <section>
+                    <p>
+                        👋Hello, World! Meu nome é <strong>Deleon Santos</strong>, Estou sempre aprendendo tecnologias novas e aqui apresento meus resultados...
+                        Todos os projetos em Python, HTML, CSS, JAVASCRIPT... disponíveis no meu repositório estão em processos de evolução e aceito colaboração.
+                        Deixem comentários, sugestões e soluções que possam ser implementadas.
+                    </p>
+                </section>
+            </div>
         </div>
+
         <div>
-            <h1>Aluno de Análise e Desenvolvimento de Sistemas e
-                    Amante de tecnologia. </h1>
-            <section>
-                <p>
-                    👋Hello, World! Meu nome é Deleon Santos, Estou sempre aprendendo tecnologias novas e aqui apresento meus resultados...
-                    Todos os projetos em Python, HTML, CSS, JAVASCRIPT... disponíveis no meu repositório estão em processos de evolução e aceito colaboração.
-                    Deixem comentários, sugestões e soluções que possam ser implementadas.
-                </p>
-            </section>
+            <!--contatos-->
             <aside>
                 <p><a href="https://github.com/Deleon-Santos/Portfolio/tree/master" target="_blank">Github</a></p>
                 <p><a href="https://www.linkedin.com/in/deleon-santos-1b835a290/"target="_blank">Linkedin</a></p>
-        
             </aside>
         </div>
-        
-        
-        
+
+        <div class="mostra">
+            <a href="#">Projetos</a>
+            <!--container oculto-->
+            <div class="oculta">
+                <div class="pro"><img src="imagens/1.jpg" alt="projeto">
+                <a href="https://deleon-santos.github.io/Mini-Site-Projeto-AndroidOS/AndroidOS.html" target="_blank">Visualizar</a></div>
+                <p>Este foi o meu primeiro site desenvolvido sob supervisão do Prof° Gustavo Guanabara usando com HTML e CSS, passou por ajustes e melhorias para tornar a experienciamais agradavel sendo totalmente funcional.</p>
+            
+                <div class="pro"><img src="imagens/1.jpg" alt="projeto">
+                <a href="https://deleon-santos.github.io/Portfolio/apresentacao.html" target="_blank">Visualizar</a></div>
+                <p>Este foi o meu primeiro Portfólio desenvolvido unicamente com HTML e CSS, é responsivo, adaptavel e funcional.</p>
+            </div>
+        </div>
     </main>
+    
     <footer>
         <p>&COPY;Desenvolvido por Leon Santos</p>
     </footer>
