@@ -5,16 +5,17 @@
     margin: 0px;
 }
 :root{
-    --cor0:rgba(0, 0, 0, 0.927);
-    --cor1:rgba(0, 0, 0, 0.811);
-    --cor2:rgba(0, 0, 0, 0.766);
+    --cor0:rgba(0, 0, 0, 0.936);
+    --cor1:rgba(28, 27, 27, 0.49);
+    --cor2:rgb(4, 4, 4);
     --cor3:rgb(1, 203, 203) ;
     --cor4:rgba(255, 255, 255, 0.608);
     --cor5:antiquewhite;
     --font-destaque:'Courier New', Courier, monospace;
     --font-padrao: Arial, Helvetica, sans-serif;
 }
-
+html{
+    scroll-behavior: smooth;}
 body{
     background-color:var(--cor0);
     color: var(--cor4);
@@ -22,38 +23,51 @@ body{
 /*cabecalho*/
 header{
     margin: auto;
-    padding: 20px; 
     height: 60px;  
-    padding-top: 30px;
-    width: 750px;      
+    padding-top: 0px;
+    display: flex;
+       
 }
 header nav{
     margin:auto ;
-    padding: 0px;  
+    padding: 20px;
+    width: 900px;
 }
-header a{
-    font-family: var(--font-padrao);
-    margin: auto; 
-    padding: 10px;
-    font-size: .8em;
-    text-decoration: none;
-    color:var(--cor3) ;
-    font-weight: bold;
-    border-radius: 10px;
-    background-color: var(--cor2);    
+.titulo {
+    font-weight: 600;
+    font-family: var(--font-destaque); 
+    margin: auto;
+    font-size: 2em;
+    color: var(--cor5);
+    display: flex;  
 }
-header a:hover{
-    background-color:var(--cor3)  ;
-    color:var(--cor2);  
+strong{
+    color: var(--cor3);
+}
+.texto:hover strong{
+    text-shadow: 1px 1px 3px var(--cor3);
+    transition-duration: .5s;
+}
+header:hover strong{
+    text-shadow: 1px 1px 3px var(--cor3);
+    transition-duration: .5s;
+}
+header:hover h1{
+    text-shadow: 1px 1px 3px var(--cor5);
+    transition-duration: .5s;
 }
 /*conteudo principal*/
-main .conteudo {
+.corpo {
     display: column;
     columns: 2;
-    max-width: 800px;
-    min-width: 600px;
+    max-width: 900px;
+    min-width: 720px;
     margin: auto;
-    padding-top: 10px;       
+    padding: 20px;          
+}
+.texto{
+    display: flex;
+    display: block;
 }
 main h1{
     font-family: var(--font-destaque);
@@ -61,44 +75,47 @@ main h1{
     font-weight: 600;
     text-align: justify;
     padding: 30px;
+    padding-bottom: 20px;
+    font-size: 1.5em;
 }
 main p{
     font-family: var(--font-padrao);
     text-align: justify;
-    padding: 30px;;
+    padding: 30px;
+    padding-top: 10px;
+    letter-spacing: 1px; 
+    font-size: .9em;
 }
 img{
-    border-radius: 25%;
-    padding-top: 0px;
-    padding-right: 0px;
+    border-radius: 180px;
+    padding: 20px;
     box-shadow: 1px 1px 3px var(--cor3);
-    width: 90%;  
+    width: 70%;
+    display: flex; 
+    margin-top: 20px; 
 }
-#img h1{
-    text-align:center;
-    color:  var(--cor3);
-    padding-top: -10px;
-    margin: auto;
-    padding-left: -20px;
-    margin-left: -10px;
+img:hover{
+    width: 70%;
+    box-shadow: 4px 4px 4px 4px var(--cor3);
+    transition-duration: 1s;
+    border-radius: 100px;
 }
-#img{
-    padding-top: 30px;
-    padding-left: 20px;
-    border-style: solid  var(--cor3);  
+.imagem{
+    display: flex;    
 }
-strong{
-    color: var(--cor3);
-}
+
+
 /*contatos*/
 aside{
     padding-bottom: 50px;
+    display: block;
 }
 aside p {
     border: 20px;
     margin: auto;
     text-align: center;
-    padding: 20px;    
+    padding: 20px; 
+      
 }
 aside a {
     padding: 10px;
@@ -107,11 +124,14 @@ aside a {
     text-decoration: none;
     color: var(--cor3);
     font-weight: bold;
-    box-shadow:  1px 3px 3px var(--cor2);     
+    
+    border: solid;     
 }
 aside a:hover{
     background-color:var(--cor3)  ;
-    color:var(--cor2);   
+    color:var(--cor2); 
+    transition-duration: .5S;  
+    box-shadow:  1px 1px 1px var(--cor3);
 }
 /*container ocullto*/
 .oculta{  
@@ -127,7 +147,9 @@ aside a:hover{
     padding-bottom: 40px;
     max-width: 600px;
     min-width: 300px;
+    
 }
+
 .mostra a{ 
     padding: 10px;
     border-radius: 10px;
@@ -135,7 +157,8 @@ aside a:hover{
     text-decoration: none;
     color:var(--cor3);
     font-weight: bold;
-    box-shadow:  1px 3px 3px var(--cor2); 
+    box-shadow:  1px 1px 1px var(--cor3); 
+    border: solid;
 }
 .mostra:hover >div{
     display: block;
@@ -144,11 +167,18 @@ aside a:hover{
     max-width: 100%;
     padding: 10px;
     border-radius: 10px;
-    background-color:var(--cor2) ;
+    background-color:var(--cor4) ;
     text-decoration: none;
-    color: var(--cor3);
-    font-weight: bold;
-    box-shadow:  1px 3px 3px var(--cor2); 
+    color: var(--cor1);
+    font-weight: normal;
+    box-shadow:  4px 4px 4px 3px var(--cor3); 
+    transition-duration: 1.5S;
+}
+.mostra:hover #projetos{
+    background-color:var(--cor3) ;
+    color: var(--cor2);
+    transition-duration: .5S;
+    
 }
 .pro{
     padding-top: 30px;
@@ -157,6 +187,9 @@ aside a:hover{
     display: contents;
     padding-bottom: 30px;  
 }
+.oculta:hover p {
+    color: var(--cor2);
+}
 .pro a{
     margin: auto;
     width: 50%;
@@ -164,13 +197,16 @@ aside a:hover{
 .pro a:hover{
     background-color:var(--cor3) ;
     text-decoration: none;
-    color: var(--cor2);
+    color: var(--cor2);   
 }
 .oculta img{
-    border-radius: 30%;
-    width: 30%;
+    border-radius: 120px;
+    width: 40%;
     display: flex;
     margin: auto;  
+    background-color:var(--cor5);
+    padding: 10px;
+    box-shadow: 1px 2px 3px var(--cor2);
 }
 /*rodape*/
 footer{
@@ -187,7 +223,9 @@ footer p{
     height: 20px;
     font-weight: bold;
 }
+
 /*ajuste para telas menores*/
+
 @media only screen and (max-width:740px) {
     header{
         width: 60%
@@ -195,30 +233,34 @@ footer p{
     header nav {
         margin: auto;
         display: flex;
-        padding-left: 10px;
-        padding-right: 10px;
+        
     }
-    header a{
-        padding: 10px;
-        font-size: .7em;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .conteudo {
+    
+    .corpo {
       width: 50%;
       margin: auto;
       display: contents;
+      
+      
+      
     }
     .oculta{
-        width: 50%;
+        width: 80%;
         margin: auto;
         display: none;
     }
+    .oculta :hover img{
+        border-radius: 30px;
+    }
+        
+    .imagem{
+        padding: 25px;
+    }
     img {
-        padding: auto;
+        
         display: flex;
-        width: 60%; 
-        padding-right: 0px;
-        padding-bottom: 10px;
+        width: 90%; 
+        padding: 20px;
+        border-radius: 280px;
         margin:auto; 
     }  }
