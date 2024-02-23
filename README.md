@@ -1,3 +1,3 @@
 # Portfolio
-Meu portfoli com projetos acadêmicos 
+Meu primeiro portfolio com projetos acadêmicos 
 https://deleon-santos.github.io/Portfolio/apresentacao.html
