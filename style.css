@@ -25,8 +25,7 @@ header{
     margin: auto;
     height: 60px;  
     padding-top: 0px;
-    display: flex;
-       
+    display: flex;      
 }
 header nav{
     margin:auto ;
@@ -97,8 +96,7 @@ img{
 img:hover{
     width: 70%;
     box-shadow: 4px 4px 4px 4px var(--cor3);
-    transition-duration: 1s;
-    border-radius: 100px;
+    transition-duration: 1s;  
 }
 .imagem{
     display: flex;    
@@ -114,8 +112,7 @@ aside p {
     border: 20px;
     margin: auto;
     text-align: center;
-    padding: 20px; 
-      
+    padding: 20px;     
 }
 aside a {
     padding: 10px;
@@ -124,14 +121,17 @@ aside a {
     text-decoration: none;
     color: var(--cor3);
     font-weight: bold;
-    
-    border: solid;     
+    border: solid;      
+}
+aside i{
+    font-size: 1.1rem;
 }
 aside a:hover{
     background-color:var(--cor3)  ;
     color:var(--cor2); 
     transition-duration: .5S;  
     box-shadow:  1px 1px 1px var(--cor3);
+    font-size: 1rem;
 }
 /*container ocullto*/
 .oculta{  
@@ -147,9 +147,9 @@ aside a:hover{
     padding-bottom: 40px;
     max-width: 600px;
     min-width: 300px;
-    
+    transition-duration: .3s;
+    font-size: 1rem;  
 }
-
 .mostra a{ 
     padding: 10px;
     border-radius: 10px;
@@ -172,13 +172,12 @@ aside a:hover{
     color: var(--cor1);
     font-weight: normal;
     box-shadow:  4px 4px 4px 3px var(--cor3); 
-    transition-duration: 1.5S;
+    transition-delay: 1s;
 }
 .mostra:hover #projetos{
     background-color:var(--cor3) ;
     color: var(--cor2);
-    transition-duration: .5S;
-    
+    transition-duration: .5S;  
 }
 .pro{
     padding-top: 30px;
@@ -232,17 +231,12 @@ footer p{
     }   
     header nav {
         margin: auto;
-        display: flex;
-        
+        display: flex;   
     }
-    
     .corpo {
       width: 50%;
       margin: auto;
-      display: contents;
-      
-      
-      
+      display: contents; 
     }
     .oculta{
         width: 80%;
@@ -251,13 +245,11 @@ footer p{
     }
     .oculta :hover img{
         border-radius: 30px;
-    }
-        
+    } 
     .imagem{
         padding: 25px;
     }
     img {
-        
         display: flex;
         width: 90%; 
         padding: 20px;
