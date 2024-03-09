@@ -72,14 +72,15 @@ main h1{
     font-family: var(--font-destaque);
     color: var(--cor5);
     font-weight: 600;
-    text-align: justify;
+    
     padding: 30px;
     padding-bottom: 20px;
     font-size: 1.5em;
+    text-align: center;
 }
 main p{
     font-family: var(--font-padrao);
-    text-align: justify;
+    text-align: center;
     padding: 30px;
     padding-top: 10px;
     letter-spacing: 1px; 
@@ -206,6 +207,13 @@ aside a:hover{
     background-color:var(--cor5);
     padding: 10px;
     box-shadow: 1px 2px 3px var(--cor2);
+}
+.git{
+    text-decoration: none;
+    border: none;
+    padding: none;
+    background-color: none;
+
 }
 /*rodape*/
 footer{
